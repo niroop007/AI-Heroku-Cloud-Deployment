@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Covido</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+      <!-- style css -->
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+      <!-- fevicon -->
+      <link rel="icon" href="{{ url_for('static', filename='images/fevicon.png') }}" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+       <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}"> 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="{{ url_for('static', filename='images/loading.gif') }}" alt="#"/></div>
+      </div>
+      <!-- end loader -->
+      <!-- top -->
+                    <!-- header -->
+         <header class="header-area">
+            <div class="left">
+               <a href="Javascript:void(0)"><i class="fa fa-search" aria-hidden="true"></i></a>
+            </div>
+            <div class="right">
+               <a href="Javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i></a>
+            </div>
+            <div class="container">
+               <div class="row d_flex">
+                  <div class="col-sm-3 logo_sm">
+                     <div class="logo">
+                        <a href="index.html"></a>
+                     </div>
+                  </div>
+                  <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-9">
+                     <div class="navbar-area">
+                        <nav class="site-navbar">
+                           <ul>
+                              <li><a class="active" href="index.html"><h1></h1></a></li>
+                              
+                              <li><a href="index.html" class="logo_midle"></a></li>
+                              
+                               
+                              
+                           </ul>
+                           
+                           <span></span>
+                           </button>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+      <!-- end header -->
+            <div class="full_bg">
+      <!-- header inner -->
+         <div class="section">
+            <!-- carousel code -->
+            <div id="banner1" class="carousel slide slider_main">
+               <ol class="carousel-indicators ">
+                  <li data-target="#banner1" data-slide-to="0" class="indicator-li-1">01</li>
+                  <li data-target="#banner1" data-slide-to="1" class="">02</li>
+                  <li data-target="#banner1" data-slide-to="2" class="active">03</li>
+               </ol>
+               <div class="carousel-inner">
+                  <!-- first slide -->
+                  <div class="carousel-item active">
+                     <div class="carousel-caption cuplle">
+                        <div class="container">
+                           <div class="row">
+                              <div class="col-md-8">
+                                 <div class="photog">
+                                    <h1>AI Based<br>Covid19<br>Detection System</h1>
+									
+									<form action="{{ url_for('predict') }}" method="POST" enctype=multipart/form-data>
+									<input type="file" name="file" id="file" required="required" />
+                                    <input type="submit" class="read_more" value="SUBMIT">
+									
+									</form>
+									
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+				  
+                  <!-- second slide -->
+                  <div class="carousel-item">
+                     <div class="carousel-caption cuplle">
+                        <div class="container">
+                           <div class="row">
+                              <div class="col-md-8">
+                                <div class="photog">
+                                    <h1>Care early<br>Coronavirus</h1>
+                                    <a class="read_more" href="javascript:void(0)" >Read More</a>
+                                    <a class="read_more" href="about.html" >About Us</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- third slide -->
+                  <div class="carousel-item">
+                     <div class="carousel-caption cuplle">
+                        <div class="container">
+                           <div class="row">
+                              <div class="col-md-8">
+                                <div class="photog">
+                                    <h1>Care early<br>Coronavirus</h1>
+                                    <a class="read_more" href="javascript:void(0)" >Read More</a>
+                                    <a class="read_more" href="about.html" >About Us</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+            </div>
+         </div>
+      </div>
+      <!-- end banner -->
+      <!-- about -->
+      <div class="about">
+         <div class="container_width">
+            <div class="row d_flex">
+                   <div class="col-md-7">
+                  <div class="titlepage text_align_left">
+                     
+                     <a class="read_more" href="about.html">About More</a>
+					 <h2>Coronavirus what it is?</h2>
+                     <p>This is a demonstration of AI based Covid-19 detection system which can be leveraged to detect the virus in a patient from chest X-ray scanned images
+                     </p>
+                  </div>
+               </div>
+               <div class="col-md-5">
+                  <div class="about_img text_align_center">
+                     <figure><img src="{{ url_for('static', filename='images/about.png') }}" alt="#"/></figure>
+                  </div>
+               </div>
+              
+            </div>
+         </div>
+      </div>
+      <!-- end about -->
+     <br>
+   
+        
+           
+    
+     
+
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                        <div class="col-lg-2 col-md-6 col-sm-6">
+                           <div class="hedingh3 text_align_left">
+                              
+                              </ul>
+                             
+           
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                           <div class="hedingh3 text_align_left">
+                             
+                              <p></p>
+                           </div>
+                        </div>
+                     
+                
+                       
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                           <div class="hedingh3  text_align_left">
+                              <h3>Contact</h3>
+                                <ul class="top_infomation">
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>
+                           Team : <br>Niroop Sriram<br>
+						   Mani Kumar Yegateeli  
+                        </li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i>
+                           Call : 
+                        </li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i>
+                           <a href="Javascript:void(0)">Email : rasphome007@gmail.com</a>
+                        </li>
+                     </ul>
+                            
+                           
+                     </div>
+                  </div>
+                   
+                    
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-8 offset-md-2">
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+      <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+   </body>
+</html>
